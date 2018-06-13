@@ -1,6 +1,8 @@
 # Description
 
-This is a library to measure and predict MPI slack during execution of an MPI application program.
+The code in this repository generates a library that predicts the time that a process of an MPI program spends waiting for other processes to complete their contribution to an MPI communication function during application execution.
+
+The library measures *MPI process slack* of a process of an MPI application running on a supercomputer. The term *MPI process slack* refers to the time that an MPI process spends waiting on other MPI processes to contribute their portion of messages to an interprocess communication function in MPI application run on a supercomputer.
 
 ---
 
