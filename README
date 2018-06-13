@@ -69,6 +69,19 @@ where $(LFLAGS) is a variable that stores flags for any other libraries needed f
 such flags are -lm, which is the flag for a math library, and -fopenmp, which is a flag for a library for shared memory parallel 
 programming named OpenMP. 
 
+
+You can use the functions from this library in the application code as follows: 
+
+(Add functions here) 
 ---
 
 # TODO
+
+1. Add example of function calls of library in application code the section 'Usage'.
+
+
+
+# Acknowledgements: 
+
+This library is developed building upon the slack prediction techniques and code of LIBRA. See http://github.com/tgamblin/libra for more information. 
+Its license file is LIBRA_LICENSE here. 
