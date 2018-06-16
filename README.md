@@ -68,10 +68,9 @@ You can use the functions from this library in the application code as follows:
 (Add functions here) 
 ---
 
-# TODO
+%%# TODO
 
-1. Add example of function calls of library in application code the section 'Usage'.
-
+%%1. Add example of function calls of library in application code the section 'Usage'.
 
 ---
 # Acknowledgements: 
