@@ -80,8 +80,7 @@ You can use the functions from this library in the application code as follows:
 1. Add example of function calls of library in application code the section 'Usage'.
 
 
-
 # Acknowledgements: 
 
 This library is developed building upon the slack prediction techniques and code of LIBRA. See http://github.com/tgamblin/libra for more information. 
-Its license file is LIBRA_LICENSE here. 
+The license for LIBRA's code file wrap.py, which is relevant to this library, is at the top of  a version of the code file wrap.py, which is copied to this folder ./wrap/ of this directory.
