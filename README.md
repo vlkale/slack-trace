@@ -16,7 +16,6 @@ To install the library on your machine, i.e., generate the library header and li
 
     ./wrap/wrap.py -c mpiCC slack-trace.h.w > slack-trace.h;
     
-    
     ./wrap/wrap.py -c mpiCC slack-trace.w > slack-trace.C; 
 
 
@@ -52,7 +51,6 @@ If you want to use the Makefile, you need to simply type the following on the co
 If you want to manually compile the files, you need to type the following on the command prompt in the directory that the files are stored in on your computer or machine:                                 
           
      mpiCC -c slack-trace.C;
-     
      
      ar rcs libslackconscious.a ./slack-trace.o;    
 
