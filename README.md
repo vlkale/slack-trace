@@ -14,7 +14,8 @@ The library measures *MPI process slack* of a process of an MPI application runn
 
 To install the library on your machine, i.e., generate the library header and library source code, you need to manually run the wrap.py program with the arguments slack-trace.h.w and slack-trace.w or use cmake. 
 
-    ./wrap/wrap.py -c mpiCC slack-trace.h.w > slack-trace.h                                 
+    ./wrap/wrap.py -c mpiCC slack-trace.h.w > slack-trace.h    
+    
                                                                                    
     ./wrap/wrap.py -c mpiCC slack-trace.w > slack-trace.C 
 
@@ -36,6 +37,7 @@ If you want to use cmake, you simply type:
 
      cmake; 
  
+ 
 Note that you may need to remove files that CMake has generated and cached in the top-level of the directory where this repository is stored on your computer or machine each type you type 'cmake'.
 
 ## Using the Makefile
@@ -50,13 +52,16 @@ If you want to use the Makefile, you need to simply type the following on the co
 If you want to manually compile the files, you need to type the following on the command prompt in the directory that the files are stored in on your computer or machine:                                 
           
      mpiCC -c slack-trace.C                                                                 
-                                                                                        
+                            
+                            
      ar rcs libslackconscious.a ./slack-trace.o    
 
 
 Then, you link the library to your application program as follows: 
 
+
      mpiCC -o myApp.C myApp.o -L. -lslackconscious <FLAGS_FOR_OTHER_LIBRARIES>
+     
 
 where $(LFLAGS) is a variable that stores flags for any other libraries needed for your application. Examples of 
 such flags are -lm, which is the flag for a math library, and -fopenmp, which is a flag for a library for shared memory parallel programming named OpenMP. 
