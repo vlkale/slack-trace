@@ -58,7 +58,7 @@ If you want to manually compile the files, you need to type the following on the
 Then, you link the library to your application program as follows: 
 
 
-     mpiCC -o myApp.C myApp.o -L. -lslackconscious <FLAGS_FOR_OTHER_LIBRARIES>
+     mpiCC -o myApp.C myApp.o -L. -lslackconscious <FLAGS_FOR_OTHER_LIBRARIES>;
      
 
 where $(LFLAGS) is a variable that stores flags for any other libraries needed for your application. Examples of 
@@ -69,7 +69,7 @@ such flags are -lm, which is the flag for a math library, and -fopenmp, which is
 
 # Acknowledgements: 
 
-This library is developed building upon the slack prediction techniques and code of LIBRA. See http://github.com/tgamblin/libra for more information.  Its license file is LIBRA_LICENSE in this repository. 
+This library is developed building upon the slack prediction techniques and code of LIBRA. See http://github.com/tgamblin/libra for more information. Its license file is LIBRA_LICENSE in this repository. 
 
 
 ---
