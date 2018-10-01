@@ -1,7 +1,6 @@
 cmake_minimum_required(VERSION 2.8)
 
 set(CMAKE_C_COMPILER /usr/bin/gcc)
-
 set(WRAP ${PROJECT_SOURCE_DIR}/wrap/wrap.py)
 include(wrap/WrapConfig.cmake)
 
@@ -14,13 +13,9 @@ add_wrapped_file(slack-trace.h slack-trace.h.w)
 # target_link_libraries(slackconscious ssl unwind)
 
 include(CheckFunctionExists)
+
+# TODO: add appropriate label for OpenMP here. 
 # find_package(OpenMP)
-
-#set(DUSCHED_SRCS
-#  slack-trace.C ${CMAKE_CURRENT_BINARY_DIR}/slack-trace.h)
-
-#add_library(d-usched-mpi-only ${DUSCHED_SRCS})
-#target_link_libraries(d-usched-mpi-only ${MPI_LIBRARIES} adept_timing)
 
 set(ROSE_HOME /usr/global/tools/rose-compiler/$ENV{SYS_TYPE}/rose-0.9.5a-20390)
 set(ROSE_LIBRARIES ${ROSE_HOME}/lib/librose.so)
@@ -51,14 +46,9 @@ function(add_rose_translator exe_name src_name)
   target_link_libraries(${exe_name} ${ROSE_LIBRARIES} ${MPI_C_LIBRARIES} slackconscious)
 endfunction()
 
-#add_mpi_executable(dotProduct dotProduct.C)
 #add_mpi_executable(dotProd dotProd.c)
 #add_rose_translator(identityTranslator identityTranslator.C)
-
 #add_rose_translator(myTranslator myTranslator.C)
-
-#install rules
-
 add_rose_translator(uSchedTrans uSchedTrans.C)
 
 install(TARGETS uSchedTrans    DESTINATION bin)
@@ -72,4 +62,3 @@ include_directories(
   ${adept_utils_INCLUDE_DIR}
   ${SLACKCONSCIOUS_INCLUDE_PATH}
 )
-
