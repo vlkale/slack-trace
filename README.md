@@ -37,7 +37,9 @@ If you want to use cmake, you simply type:
      cmake; 
  
  
-Note that you may need to remove files that CMake has generated and cached in the top-level of the directory where this repository is stored on your computer or machine each type you type 'cmake'.
+Note that, as with any project using cmake, you may need to remove files that CMake has generated and cached in the top-level of the directory where this repository is stored on your computer or machine each type you type 'cmake'.
+
+I have provided a cmake toolchain file for using the slack prediction library on an application run on IBM BlueGene/Q supercomputer. Application code using this slack prediction library has been compiled, run and tested successfully on Lawrence Livermore National Lab's run on the IBM BlueGene/Q supercomputer Sequouia.
 
 ## Using the Makefile
 
