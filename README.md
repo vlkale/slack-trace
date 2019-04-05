@@ -69,6 +69,6 @@ such flags are -lm, which is the flag for a math library, and -fopenmp, which is
 
 # Acknowledgements: 
 
-This library is developed building upon the slack prediction techniques and code of LIBRA. See http://github.com/tgamblin/libra for more information. The license for LIBRA's code file wrap.py, which is relevant to this library, is at the top of a version of the code file wrap.py, which is copied to this folder ./wrap/ of this directory.
+This library is developed building upon the slack prediction techniques and code of LIBRA. See http://github.com/tgamblin/libra for more information. The license for LIBRA's code file wrap.py, which is relevant to this library, is at the top of a version of the code file wrap.py, which is copied to this folder ./wrap/ of this directory. Thanks to staff in Center of Applied Scientific Computing, including Barry Rountree and Todd Gamblin, for providing software development and technical guidance on developing the library, and to Torsten Hoefler at ETH Zurich for providing motivation and theoretical foundations for the library.
 
 ---
